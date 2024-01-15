@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Grid Component</title>
+    <!-- Tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "24px",
+          },
+          extend: {
+            screens: {
+              "2xl": "1320px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1 class="text-2xl text-center font-bold my-6">Gallery Grid</h1>
+    <div class="grid lg:grid-cols-2">
+      <!-- Definition Section -->
+      <div class="flex items-stretch w-full">
+        <div class="flex justify-center items-center w-full bg-cover bg-center py-16 lg:py-0" style="background-image: url(https://source.unsplash.com/random/1080x1080/?space)">
+          <!-- Content -->
+          <div class="max-w-sm w-full overflow-hidden border-2 border-white rounded-xl">
+            <div class="text-white bg-slate-600/50 backdrop-blur-md p-6">
+              <img class="block h-[180px] object-cover object-center rounded-full mx-auto mb-4" src="https://source.unsplash.com/random/300x300/?moon" alt="" />
+              <p class="text-sm leading-loose">Secara sederhana, bulan adalah benda langit yang bergerak mengelilingi planet bumi sesuai dengan garis orbit, yang disebut sebagai satelit bumi. Bulan merupakan satu-satunya satelit bumi.</p>
+              <!-- <img class="block h-[40px] object-cover object-center mx-auto" src="https://source.unsplash.com/random/300x300/?river&2" alt="" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gallery Section -->
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-2 lg:mt-0 px-2">
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&1" alt="" />
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&2" alt="" />
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&3" alt="" />
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&4" alt="" />
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&5" alt="" />
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&6" alt="" />
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&7" alt="" />
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&8" alt="" />
+        <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&9" alt="" />
+      </div>
+    </div>
+    <!-- Detail -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 my-2">
+      <div class="px-4 py-6">
+        <h2 class="text-2xl font-bold mb-2">Bulan</h2>
+        <p class="font-medium mb-4">Lorem ipsum dolor sit amet</p>
+        <img class="block h-[180px] aspect-video object-cover" src="https://source.unsplash.com/random/?moon" alt="" />
+        <!-- Location -->
+        <div class="mt-6">
+          <h3 class="font-bold mb-2">Lorem:</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <!-- Location -->
+        <div class="mt-6">
+          <h3 class="font-bold mb-2">Lorem:</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <!-- Location -->
+        <div class="mt-6">
+          <h3 class="font-bold mb-2">Lorem:</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <!-- Location -->
+        <div class="mt-6">
+          <h3 class="font-bold mb-2">Lorem:</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <!-- Location -->
+        <div class="mt-6">
+          <h3 class="font-bold mb-2">Lorem:</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+        <!-- Location -->
+        <div class="mt-6">
+          <h3 class="font-bold mb-2">Lorem:</h3>
+          <p class="text-sm leading-loose">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, veniam harum aliquam vitae odit nemo magnam molestias dolorum quasi! Tempore porro consequuntur aliquam ad. Deleniti vitae quae eaque molestiae omnis autem fugiat
+            assumenda quia ullam minima. Eius sapiente quisquam nihil aliquam saepe? Error tenetur recusandae reiciendis iure? Vero, dolores alias.
+          </p>
+        </div>
+      </div>
+      <!-- Gallery -->
+      <div class="col-span-2 px-2">
+        <!-- Left Column -->
+        <div class="grid lg:grid-cols-2 gap-2">
+          <div class="gap-2">
+            <img class="aspect-[3/4] object-cover mb-2" src="https://source.unsplash.com/random/?moon&1" alt="" />
+            <div class="grid grid-cols-2 gap-2">
+              <img class="aspect-[3/4] object-cover" src="https://source.unsplash.com/random/?moon&2" alt="" />
+              <img class="aspect-[3/4] object-cover" src="https://source.unsplash.com/random/?moon&3" alt="" />
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="gap-2">
+            <img class="aspect-[3/4] object-cover mb-2" src="https://source.unsplash.com/random/?moon&4" alt="" />
+            <div class="grid grid-cols-2 gap-2">
+              <img class="aspect-[3/4] object-cover" src="https://source.unsplash.com/random/?moon&5" alt="" />
+              <img class="aspect-[3/4] object-cover" src="https://source.unsplash.com/random/?moon&6" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
