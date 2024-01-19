@@ -3,40 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar Component</title>
-    <!-- Tailwindcss CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Navbar Section Component</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
-    <script>
-      tailwind.config = {
-        theme: {
-          container: {
-            center: true,
-            padding: "24px",
-          },
-          extend: {
-            colors: {
-              main: "#16A34A",
-              black: "#334155",
-            },
-            screens: {
-              "2xl": "1320px",
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="flex justify-between items-center w-full fixed bg-white p-6">
+    <!-- Navbar Section -->
+    <nav class="flex justify-between items-center w-full fixed bg-light p-6">
       <!-- Nav Brand -->
-      <a href="" class="text-3xl text-main fill-current font-bold leading-none">
+      <a href="" class="text-3xl text-greencstm fill-current font-bold leading-none">
         <svg class="h-10" alt="Nav Brand" viewBox="0 0 10240 10240">
           <path
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +28,6 @@
       <div class="lg:hidden">
         <button class="navbar-burger flex items-center text-black">
           <svg class="block w-6 h-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <!-- <title>Mobile menu</title> -->
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg>
         </button>
@@ -77,17 +56,16 @@
         </li>
       </ul>
       <!-- Register Button -->
-      <a href="" class="hidden lg:inline-block text-sm text-white font-medium bg-main hover:bg-green-700 rounded-md lg:ml-auto lg:mr-4 px-8 py-3 transition duration-300">Register</a>
+      <a href="" class="hidden lg:inline-block text-sm text-light font-medium bg-greencstm hover:bg-green-700 rounded-md lg:ml-auto lg:mr-4 px-8 py-3 transition duration-300">Register</a>
       <!-- Login Button -->
-      <a href="" class="hidden lg:inline-block text-sm text-black font-medium border border-slate-400 hover:border-main hover:ring-1 hover:ring-main rounded-md px-8 py-3 transition duration-300">Login</a>
+      <a href="" class="hidden lg:inline-block text-sm text-black font-medium border border-slate-400 hover:border-greencstm hover:ring-1 hover:ring-greencstm rounded-md px-8 py-3 transition duration-300">Login</a>
     </nav>
     <!-- Navbar Mobile -->
     <div class="navbar-menu hidden relative z-50">
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-      <nav class="flex flex-col max-w-sm w-5/6 overflow-y-auto fixed top-0 left-0 bottom-0 bg-white border-r p-6">
-        <!-- Header -->
+      <nav class="flex flex-col max-w-sm w-5/6 overflow-y-auto fixed top-0 left-0 bottom-0 bg-light border-r p-6">
+        <!-- Close Navbar Mobile Button -->
         <div class="flex justify-end items-center mb-8">
-          <!-- Close Navbar Mobile Button -->
           <button class="navbar-close">
             <svg class="cursor-pointer w-6 h-6 text-gray-400 hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -123,9 +101,9 @@
         <div class="mt-auto">
           <div class="pt-6">
             <!-- Register Button -->
-            <a href="" class="block text-sm text-white text-center font-semibold bg-main hover:bg-green-700 rounded-md mb-4 lg:mb-0 px-4 py-3">Register</a>
+            <a href="" class="block text-sm text-light text-center font-semibold bg-greencstm hover:bg-green-700 rounded-md mb-4 lg:mb-0 px-4 py-3 transition duration-300">Register</a>
             <!-- Login Button -->
-            <a href="" class="block text-sm text-black text-center font-semibold border border-slate-400 hover:border-main hover:ring-1 hover:ring-main rounded-md mb-8 px-4 py-3">Login</a>
+            <a href="" class="block text-sm text-black text-center font-semibold border border-slate-400 hover:border-greencstm hover:ring-1 hover:ring-main rounded-md mb-8 px-4 py-3 transition duration-300">Login</a>
           </div>
         </div>
       </nav>

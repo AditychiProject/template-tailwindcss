@@ -4,66 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Section Component</title>
-    <!-- Tailwindcss CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Script -->
-    <script>
-      tailwind.config = {
-        theme: {
-          container: {
-            center: true,
-            padding: "24px",
-          },
-          extend: {
-            colors: {
-              primary: "#2563EB",
-              light: "#FFFFFF",
-            },
-            screens: {
-              "2xl": "1320px",
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
     <!-- Login Section -->
-    <section id="login" class="flex w-full min-h-screen bg-cover" style="background-image: url('img/bg.jpg')">
+    <section id="login" class="flex w-full min-h-screen bg-cover" style="background-image: url('src/img/bg.jpg')">
       <div class="container m-auto">
         <!-- Form Login -->
         <div class="max-w-lg bg-light rounded-xl mx-auto px-6 py-12">
           <h2 class="text-2xl text-center uppercase font-bold mb-8">Login</h2>
-          <form action="">
+          <form action="" method="">
             <!-- Email -->
             <div class="mb-6">
               <label for="email" class="block text-sm mb-2">Email</label>
-              <input type="email" name="email" id="email" class="block w-full border border-slate-500 outline-primary rounded-md p-3" />
+              <input type="email" name="email" id="email" class="block w-full border border-slate-500 outline-bluecstm rounded-md p-3" />
             </div>
             <!-- Password -->
             <div class="mb-6">
               <label for="password" class="block text-sm mb-2">Password</label>
-              <input type="password" name="password" id="password" class="block w-full border border-slate-500 outline-primary rounded-md p-3" />
+              <input type="password" name="password" id="password" class="block w-full border border-slate-500 outline-bluecstm rounded-md p-3" />
             </div>
             <!-- Login Button -->
-            <button type="button" class="w-full text-sm text-light font-medium bg-primary hover:bg-blue-800 rounded-md p-4 transition duration-300">Login</button>
-            <p class="text-sm text-center my-6">Or</p>
+            <button type="submit" name="login" class="w-full text-sm text-light font-medium bg-bluecstm hover:bg-blue-800 rounded-md p-4 transition duration-300">Login</button>
+            <p class="text-sm text-center my-6">Atau</p>
             <!-- Media Social -->
             <div class="flex justify-evenly items-center w-1/2 lg:w-2/5 mx-auto">
-              <a href=""><img src="img/fb.png" class="w-8 h-8 hover:scale-105 transition duration-300" alt="" /></a>
-              <a href=""><img src="img/linkedin.png" class="w-8 h-8 hover:scale-105 transition duration-300" alt="" /></a>
-              <a href=""><img src="img/email.png" class="w-8 h-8 hover:scale-105 transition duration-300" alt="" /></a>
+              <a href=""><img src="src/img/fb.png" class="w-8 h-8 hover:scale-105 transition duration-300" alt="" /></a>
+              <a href=""><img src="src/img/linkedin.png" class="w-8 h-8 hover:scale-105 transition duration-300" alt="" /></a>
+              <a href=""><img src="src/img/email.png" class="w-8 h-8 hover:scale-105 transition duration-300" alt="" /></a>
             </div>
             <!-- Register Link -->
             <div class="text-center">
               <p class="inline-block text-sm text-center mt-6 mr-[1px]">Belum punya akun?</p>
-              <a href="" class="text-sm text-primary font-bold">Daftar sekarang</a>
+              <a href="" class="text-sm text-bluecstm font-bold">Daftar sekarang</a>
             </div>
           </form>
         </div>
