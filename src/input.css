@@ -5,3 +5,7 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+.table-header {
+  @apply text-nowrap text-xs text-light uppercase tracking-wider font-bold bg-gray-800 border-b-2 border-gray-200 p-4;
+}
