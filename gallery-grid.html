@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery Grid Component</title>
+    <title>Gallery Grid</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Style -->
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
     <h1 class="text-2xl text-center font-bold my-6">Gallery Grid</h1>
     <!-- Definition Section -->
-    <div class="grid lg:grid-cols-2">
+    <section class="grid lg:grid-cols-2">
       <!-- Left Column - Definition -->
       <div class="flex items-stretch w-full">
         <div class="flex justify-center items-center w-full bg-cover bg-center py-16 lg:py-0" style="background-image: url(https://source.unsplash.com/random/1080x1080/?space)">
@@ -24,7 +23,6 @@
             <div class="text-light bg-slate-600/50 backdrop-blur-md rounded-xl p-6">
               <img class="block h-[180px] object-cover object-center rounded-full mx-auto mb-4" src="https://source.unsplash.com/random/300x300/?moon" alt="" />
               <p class="text-sm leading-loose">Secara sederhana, bulan adalah benda langit yang bergerak mengelilingi planet bumi sesuai dengan garis orbit, yang disebut sebagai satelit bumi. Bulan merupakan satu-satunya satelit bumi.</p>
-              <!-- <img class="block h-[40px] object-cover object-center mx-auto" src="https://source.unsplash.com/random/300x300/?river&2" alt="" /> -->
             </div>
           </div>
         </div>
@@ -41,9 +39,9 @@
         <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&8" alt="" />
         <img class="aspect-square object-cover object-center" src="https://source.unsplash.com/random/300x300/?moon&9" alt="" />
       </div>
-    </div>
+    </section>
     <!-- Detail Section -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 mt-6">
+    <section class="grid grid-cols-1 lg:grid-cols-3 mt-6">
       <!-- Left Column - Detail -->
       <div class="px-4 py-6">
         <h2 class="text-2xl font-bold mb-2">Bulan</h2>
@@ -104,6 +102,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
