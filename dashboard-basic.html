@@ -13,7 +13,7 @@
   </head>
   <body class="bg-slate-200">
     <!-- Navbar Section -->
-    <nav class="flex justify-between items-center w-full fixed bg-light p-6">
+    <nav class="flex justify-between items-center w-full fixed bg-light p-4">
       <!-- Nav Brand -->
       <a href="" class="text-3xl text-greencstm fill-current font-bold leading-none">
         <svg class="h-10" alt="Nav Brand" viewBox="0 0 10240 10240">
@@ -54,8 +54,10 @@
           <a href="" class="text-sm text-black hover:text-greencstm font-medium mx-6">Contact</a>
         </li>
       </ul>
-      <!-- Logout Button -->
-      <a href="" class="hidden lg:inline-block text-sm text-light font-medium bg-red-500 hover:bg-red-700 rounded-md lg:ml-auto lg:mr-4 px-8 py-3 transition duration-300">Logout</a>
+      <!-- Register Button -->
+      <a href="register.php" class="hidden lg:inline-block text-sm text-light font-medium bg-greencstm hover:bg-green-700 rounded-md lg:ml-auto lg:mr-4 px-8 py-3">Register</a>
+      <!-- Login Button -->
+      <a href="login.php" class="hidden lg:inline-block text-sm text-black font-medium border border-slate-400 hover:border-transparent hover:outline hover:outline-2 hover:outline-greencstm rounded-md px-8 py-3">Login</a>
     </nav>
     <!-- Navbar Mobile -->
     <div class="navbar-menu hidden relative z-50">
@@ -94,10 +96,13 @@
             </li>
           </ul>
         </div>
-        <!-- Logout Button -->
+        <!-- Bottom Elements -->
         <div class="mt-auto">
           <div class="pt-6">
-            <a href="" class="block lg:hidden text-sm text-light text-center font-medium bg-red-500 hover:bg-red-700 rounded-md lg:ml-auto lg:mr-4 px-8 py-3 transition duration-300">Logout</a>
+            <!-- Register Button -->
+            <a href="register.php" class="block text-sm text-light text-center font-semibold bg-greencstm hover:bg-green-700 rounded-md mb-4 lg:mb-0 px-4 py-3">Register</a>
+            <!-- Login Button -->
+            <a href="login.php" class="block text-sm text-black text-center font-semibold border border-slate-400 hover:border-transparent hover:outline hover:outline-2 hover:outline-greencstm rounded-md mb-8 px-4 py-3">Login</a>
           </div>
         </div>
       </nav>
