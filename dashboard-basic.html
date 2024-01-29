@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard Page</title>
+    <title>Dashboard Basic</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Style -->
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body class="bg-slate-200">
@@ -62,7 +61,7 @@
     <div class="navbar-menu hidden relative z-50">
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
       <nav class="flex flex-col max-w-sm w-5/6 overflow-y-auto fixed top-0 left-0 bottom-0 bg-light border-r p-6">
-        <!-- Close Navbar Mobile Button -->
+        <!-- Close Button -->
         <div class="flex justify-end items-center mb-8">
           <button class="navbar-close">
             <svg class="cursor-pointer w-6 h-6 text-gray-400 hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -95,10 +94,9 @@
             </li>
           </ul>
         </div>
-        <!-- Buttons -->
+        <!-- Logout Button -->
         <div class="mt-auto">
           <div class="pt-6">
-            <!-- Logout Button -->
             <a href="" class="block lg:hidden text-sm text-light text-center font-medium bg-red-500 hover:bg-red-700 rounded-md lg:ml-auto lg:mr-4 px-8 py-3 transition duration-300">Logout</a>
           </div>
         </div>
@@ -114,10 +112,15 @@
             <!-- Create Data Link -->
             <a href="create-data.php" class="inline-block text-sm text-light bg-bluecstm hover:bg-blue-700 rounded-md px-4 py-3">Tambah data buku</a>
             <!-- Search Bar -->
-            <form action="" method="post" class="hidden lg:flex lg:items-center">
-              <input type="text" name="keyword" class="hidden lg:inline-block w-64 h-full text-sm text-black font-medium bg-light border border-slate-300 outline-bluecstm rounded-md lg:ml-auto lg:mr-4 p-3" placeholder="Cari data disini" />
-              <button type="submit" name="search" class="inline-block h-full text-sm text-light bg-bluecstm hover:bg-blue-700 rounded-md p-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <form action="" method="post" class="lg:flex lg:items-center">
+              <input
+                type="text"
+                name="keyword"
+                class="hidden lg:inline-block w-64 h-full text-sm text-black font-medium bg-light border border-slate-300 focus:border-transparent focus:outline focus:outline-2 focus:outline-bluecstm rounded-tl-md rounded-bl-md lg:ml-auto p-3"
+                placeholder="Cari data disini"
+              />
+              <button type="submit" name="search" class="inline-block w-[44px] lg:w-auto h-full text-sm text-light bg-bluecstm hover:bg-blue-700 rounded-full lg:rounded-tr-md lg:rounded-tl-none lg:rounded-br-md lg:rounded-bl-none p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search block lg:inline mx-auto" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                 </svg>
               </button>
@@ -167,7 +170,7 @@
                   <!-- Cover Buku -->
                   <td class="text-sm text-center p-4">
                     <div class="flex-shrink-0 w-[80px] mx-auto">
-                      <img class="aspect-[9/16]" src="src/img/yoimiya.jpg" />
+                      <img class="aspect-[9/16]" src="dist/img/yoimiya.jpg" />
                     </div>
                   </td>
                   <!-- Aksi -->
@@ -218,7 +221,7 @@
                   <!-- Cover Buku -->
                   <td class="text-sm text-center p-4">
                     <div class="flex-shrink-0 w-[80px] mx-auto">
-                      <img class="aspect-[9/16]" src="src/img/wanderer.jpg" />
+                      <img class="aspect-[9/16]" src="dist/img/wanderer.jpg" />
                     </div>
                   </td>
                   <!-- Aksi -->
@@ -269,7 +272,7 @@
                   <!-- Cover Buku -->
                   <td class="text-sm text-center p-4">
                     <div class="flex-shrink-0 w-[80px] mx-auto">
-                      <img class="aspect-[9/16]" src="src/img/archons.jpg" />
+                      <img class="aspect-[9/16]" src="dist/img/archons.jpg" />
                     </div>
                   </td>
                   <!-- Aksi -->
@@ -302,7 +305,7 @@
         <!-- Paginate Link -->
         <div class="flex justify-end gap-x-1 mt-3 pb-[64px] lg:pb-[96px]">
           <!-- Pre Button -->
-          <div class="w-[40px] h-[40px] text-black bg-light border border-slate-300 rounded-lg">
+          <div class="w-[40px] h-[40px] text-black hover:text-light bg-light hover:bg-bluecstm border border-slate-300 rounded-lg">
             <a href="" class="flex justify-center items-center w-full h-full">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
@@ -311,7 +314,7 @@
             </a>
           </div>
           <!-- Paginate Unactive -->
-          <div class="w-[40px] h-[40px] text-black bg-light border border-slate-300 rounded-lg">
+          <div class="w-[40px] h-[40px] hover:text-light bg-light hover:bg-bluecstm border border-slate-300 rounded-lg">
             <a href="" class="flex justify-center items-center w-full h-full">1</a>
           </div>
           <!-- Paginate Active -->
@@ -319,11 +322,11 @@
             <a href="" class="flex justify-center items-center w-full h-full">2</a>
           </div>
           <!-- Paginate Unactive -->
-          <div class="w-[40px] h-[40px] text-black bg-light border border-slate-300 rounded-lg">
+          <div class="w-[40px] h-[40px] hover:text-light bg-light hover:bg-bluecstm border border-slate-300 rounded-lg">
             <a href="" class="flex justify-center items-center w-full h-full">3</a>
           </div>
           <!-- Next Button -->
-          <div class="w-[40px] h-[40px] text-black bg-light border border-slate-300 rounded-lg">
+          <div class="w-[40px] h-[40px] hover:text-light bg-light hover:bg-bluecstm border border-slate-300 rounded-lg">
             <a href="" class="flex justify-center items-center w-full h-full">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708" />
